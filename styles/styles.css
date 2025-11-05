@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, #ffe5ec, #e0f7fa);
+  color: #333;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 650px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-photo {
+  width: 60%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.small-photo {
+  width: 65%;
+  border-radius: 12px;
+  margin: 30px auto;
+  display: block;
+}
+
+h1 {
+  color: #d81b60;
+  font-size: 2.3em;
+}
+
+.subtitle {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.countdown {
+  background-color: #f8bbd0;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 25px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #880e4f;
+}
+
+.details {
+  margin: 30px 0;
+  line-height: 1.6;
+}
+
+.button {
+  background-color: #d81b60;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ad1457;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Animación suave de fade-in */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Animación pop para números del contador */
+.pop {
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); color: #d81b60; }
+  100% { transform: scale(1); color: #880e4f; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-photo, .small-photo {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .subtitle {
+    font-size: 1.2em;
+  }
+
+  .countdown {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-photo, .small-photo {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  .subtitle {
+    font-size: 1em;
+  }
+
+  .countdown {
+    font-size: 1em;
+  }
+}
+.details p strong {
+  color: #d81b60; /* mismo color de los títulos */
+}
+
+.details p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.details p span {
+  font-weight: normal;
+}
+.info-card {
+  background-color: #fce4ec; /* rosa suave */
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 0;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.info-card p {
+  margin: 0;
+  line-height: 1.5;
+}
+.no-babies {
+  display: flex;
+  align-items: center;
+  background-color: #ffe5ec; /* suave y amistoso */
+  padding: 15px;
+  border-radius: 12px;
+  margin: 20px 0;
+  font-size: 1em;
+  color: #d81b60;
+  line-height: 1.4;
+}
+
+.no-babies .icon {
+  font-size: 2em;
+  margin-right: 10px;
+}
+.note {
+  background-color: #fff3e0; /* color suave, amistoso */
+  padding: 15px 20px;
+  border-left: 4px solid #d81b60;
+  border-radius: 10px;
+  margin: 30px 0 15px 0; /* más espacio arriba y abajo */
+  font-size: 1em;
+  color: #333;
+  line-height: 1.5;
+  text-align: left;
+}
+.about-us {
+  background-color: #f0f8ff; /* fondo suave, armonioso */
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  font-size: 1em;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.about-us .flag {
+  font-size: 1.5em;
+  margin: 0 5px;
+}
+
