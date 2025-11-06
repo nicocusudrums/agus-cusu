@@ -1,5 +1,5 @@
 // Fecha del evento
-const eventDate = new Date("Dec 19, 2025 21:00:00").getTime();
+const eventDate = new Date("Dec 19, 2025 22:00:00").getTime();
 
 // Función para animar solo si cambia el valor
 function animateCounter(el, oldValue, newValue) {
