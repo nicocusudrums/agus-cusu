@@ -3,6 +3,13 @@ const eventDate = new Date("Dec 19, 2025 21:00:00").getTime();
 
 // INVITADOS (nombre + cantidad)
 const guests = [
+  { name: "Juan Pablo Sosa", qty: 2 },
+  { name: "Mauro Cusumano", qty: 2 },
+  { name: "Romi Sosa U", qty: 2 },
+  { name: "Ro Cusumano", qty: 2 },
+  { name: "Jose Cerasuolo", qty: 4 },
+  { name: "Ani Carretero", qty: 3 },
+  { name: "Eduardo Cusumano", qty: 2 },
   { name: "Nacho Robles", qty: 2 },
   { name: "Maxi Coll", qty: 2 },
   { name: "Augusto", qty: 2 },
@@ -11,12 +18,6 @@ const guests = [
   { name: "Big", qty: 2 },
   { name: "Negro", qty: 2 },
   { name: "Pablo Ferreyra", qty: 2 },
-  { name: "Juan Pablo Sosa", qty: 2 },
-  { name: "Romi Sosa U", qty: 2 },
-  { name: "Mauro Cusumano", qty: 2 },
-  { name: "Ro Cusumano", qty: 2 },
-  { name: "Jose Cerasuolo", qty: 4 },
-  { name: "Ani Carretero", qty: 3 },
   { name: "Seba Diaz", qty: 2 },
   { name: "Markuza", qty: 1 },
   { name: "El Tucu Gamarra", qty: 1 },
