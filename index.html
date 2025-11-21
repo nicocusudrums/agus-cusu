@@ -7,6 +7,17 @@
     <title>Brindis por nuestro casamiento</title>
     <link rel="stylesheet" href="styles/styles.css" />
 </head>
+<!-- MODAL DE CONFIRMACION -->
+<div id="guestModal" class="modal">
+    <div class="modal-content fade-in">
+        <h2>¿Quién sos? 😊</h2>
+        <p>Elegí tu nombre para confirmar asistencia:</p>
+
+        <div id="guestList" class="guest-list"></div>
+
+        <button class="close-btn" onclick="closeModal()">Cerrar</button>
+    </div>
+</div>
 
 <body>
     <div class="container fade-in">
@@ -49,7 +60,8 @@
 
         <div class="rsvp">
             <p>Confirmá tu asistencia hasta el domingo 30 de noviembre PLIS:</p>
-            <a href="https://wa.me/+5493816855266" target="_blank" class="button">Confirmar</a>
+            <button class="button" onclick="openModal()">Confirmar</button>
+
         </div>
 
 
