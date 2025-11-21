@@ -12,6 +12,7 @@ const guests = [
   { name: "Jose Cerasuolo", qty: 4 },
   { name: "Ani Carretero", qty: 3 },
   { name: "Eduardo Cusumano", qty: 2 },
+  { name: "Marcos Matar", qty: 2 },
   { name: "Nacho Robles", qty: 2 },
   { name: "Maxi Coll", qty: 2 },
   { name: "Augusto", qty: 2 },
