@@ -9,12 +9,14 @@
 </head>
 
 <body>
-    <!-- MODAL DE CONFIRMACIÓN -->
+    <!-- MODAL DE CONFIRMACION -->
     <div id="guestModal" class="modal">
         <div class="modal-content fade-in">
             <h2>¿Quién sos? 😊</h2>
             <p>Elegí tu nombre para confirmar asistencia:</p>
+
             <div id="guestList" class="guest-list"></div>
+
             <button class="close-btn" onclick="closeModal()">Cerrar</button>
         </div>
     </div>
@@ -25,7 +27,8 @@
         <img src="cusuyagus1.jpg" alt="Agus y Cusu" class="main-photo" />
 
         <p class="subtitle">Queremos brindar con vos 🍾, en una mezcla cultural entre el asado y la pasta, la cumbia y
-            la tarantela y el obelisco y el coliseo! 🍝💃</p>
+            la tarantela
+            y el obelisco y el coliseo! 🍝💃</p>
 
         <!-- CONTADOR -->
         <div class="countdown">
@@ -45,7 +48,8 @@
                     Complejo ATEP. Adolfo de la Vega 265.
                 </a>
             </p>
-            <p><strong>👗 Dresscode:</strong> INFORMAL, super chill, cómodo, como más te guste. No camisetas de futbol.</p>
+            <p><strong>👗 Dresscode:</strong> INFORMAL, super chill, cómodo, como más te guste. No camisetas de fútbol.
+            </p>
             <p><strong>🎁 Qué llevar:</strong> Solamente la bebida que tomarás, alcohol o no alcohol.</p>
             <p>Es un evento SUPER informal, para celebrar con la familia y los amigos más cercanos a nosotros.</p>
         </div>
@@ -54,24 +58,9 @@
         <img src="cusuyagus2.jpg" alt="Brindis" class="small-photo" />
 
         <div class="rsvp">
-            <p>Confirmá tu asistencia hasta el domingo 30 de noviembre PLIS:</p>
+            <p>Confirmá tu asistencia hasta el domingo 7 de Diciembre PLIS:</p>
             <button class="button" onclick="openModal()">Confirmar</button>
         </div>
-
-        <!-- SECCIÓN DE CONFIRMADOS CON PROTECCIÓN -->
-        <section class="confirmed-section">
-            <h2>Confirmados</h2>
-
-            <!-- PASSWORD -->
-            <div id="passwordDiv">
-                <input type="password" id="adminPassword" placeholder="Ingresá la contraseña" />
-                <button class="button" onclick="checkPassword()">Ver lista</button>
-            </div>
-
-            <!-- LISTA OCULTA -->
-            <ul id="confirmedList" style="display: none;"></ul>
-            <button class="button" onclick="downloadCSV()" id="downloadBtn" style="display: none;">Descargar lista (Excel)</button>
-        </section>
 
         <footer>
             <p>Con amor,</p>
@@ -84,5 +73,7 @@
 </body>
 
 </html>
+
+
 
 

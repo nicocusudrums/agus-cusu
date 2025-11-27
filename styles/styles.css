@@ -55,18 +55,6 @@ h1 {
   line-height: 1.6;
 }
 
-.details p strong {
-  color: #d81b60;
-}
-
-.details p {
-  margin: 10px 0;
-}
-
-.details p span {
-  font-weight: normal;
-}
-
 .button {
   background-color: #fcefda;
   color: rgb(0, 0, 0);
@@ -75,7 +63,6 @@ h1 {
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s ease;
-  cursor: pointer;
 }
 
 .button:hover {
@@ -89,18 +76,22 @@ footer {
   color: #666;
 }
 
-/* Animación suave de fade-in */
 .fade-in {
   opacity: 0;
   animation: fadeIn 1.2s ease forwards;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Animación pop para números del contador */
 .pop {
   animation: pop 0.3s ease;
 }
@@ -111,7 +102,6 @@ footer {
   100% { transform: scale(1); color: #880e4f; }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .main-photo, .small-photo { width: 80%; }
   h1 { font-size: 2em; }
@@ -126,7 +116,9 @@ footer {
   .countdown { font-size: 1em; }
 }
 
-/* MODAL */
+.details p strong { color: #d81b60; }
+.details p { margin: 10px 0; line-height: 1.6; }
+
 .modal {
   display: none;
   position: fixed;
@@ -181,45 +173,5 @@ footer {
 
 .close-btn:hover {
   background: #b3b3b3;
-}
-
-/* LISTA DE CONFIRMADOS */
-.confirmed-section {
-  margin-top: 35px;
-  padding: 20px;
-  background: #fce4ec;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  text-align: left;
-}
-
-.confirmed-section h2 {
-  color: #d81b60;
-  margin-bottom: 10px;
-}
-
-#confirmedList {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 15px;
-}
-
-#confirmedList li {
-  background: white;
-  padding: 10px 15px;
-  margin: 6px 0;
-  border-radius: 10px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-  font-weight: 600;
-}
-
-/* INPUT DE CONTRASEÑA */
-#adminPassword {
-    padding: 8px 12px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    margin-right: 10px;
-    width: 60%;
-    max-width: 200px;
 }
 
