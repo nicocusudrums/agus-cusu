@@ -55,6 +55,18 @@ h1 {
   line-height: 1.6;
 }
 
+.details p strong {
+  color: #d81b60;
+}
+
+.details p {
+  margin: 10px 0;
+}
+
+.details p span {
+  font-weight: normal;
+}
+
 .button {
   background-color: #fcefda;
   color: rgb(0, 0, 0);
@@ -63,10 +75,12 @@ h1 {
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s ease;
+  cursor: pointer;
 }
 
 .button:hover {
   background-color: #ad1457;
+  color: white;
 }
 
 footer {
@@ -82,15 +96,8 @@ footer {
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Animación pop para números del contador */
@@ -99,106 +106,24 @@ footer {
 }
 
 @keyframes pop {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.4);
-    color: #d81b60;
-  }
-
-  100% {
-    transform: scale(1);
-    color: #880e4f;
-  }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); color: #d81b60; }
+  100% { transform: scale(1); color: #880e4f; }
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-
-  .main-photo,
-  .small-photo {
-    width: 80%;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  .subtitle {
-    font-size: 1.2em;
-  }
-
-  .countdown {
-    font-size: 1.2em;
-  }
+  .main-photo, .small-photo { width: 80%; }
+  h1 { font-size: 2em; }
+  .subtitle { font-size: 1.2em; }
+  .countdown { font-size: 1.2em; }
 }
 
 @media (max-width: 480px) {
-
-  .main-photo,
-  .small-photo {
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 1.6em;
-  }
-
-  .subtitle {
-    font-size: 1em;
-  }
-
-  .countdown {
-    font-size: 1em;
-  }
-}
-
-.details p strong {
-  color: #d81b60;
-  /* mismo color de los títulos */
-}
-
-.details p {
-  margin: 10px 0;
-  line-height: 1.6;
-}
-
-.details p span {
-  font-weight: normal;
-}
-
-.info-card {
-  background-color: #fce4ec;
-  /* rosa suave */
-  border-radius: 12px;
-  padding: 15px;
-  margin: 15px 0;
-  text-align: left;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.info-card p {
-  margin: 0;
-  line-height: 1.5;
-}
-
-.about-us {
-  background-color: #f0f8ff;
-  /* fondo suave, armonioso */
-  padding: 15px 20px;
-  border-radius: 12px;
-  margin: 20px 0;
-  font-size: 1em;
-  color: #333;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.about-us .flag {
-  font-size: 1.5em;
-  margin: 0 5px;
+  .main-photo, .small-photo { width: 100%; }
+  h1 { font-size: 1.6em; }
+  .subtitle { font-size: 1em; }
+  .countdown { font-size: 1em; }
 }
 
 /* MODAL */
@@ -223,6 +148,8 @@ footer {
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  max-height: 80vh;
+  overflow-y: auto;
 }
 
 .guest-list button {
@@ -233,7 +160,7 @@ footer {
   color: white;
   border: none;
   border-radius: 10px;
-  font-size: 1.0em;
+  font-size: 1em;
   cursor: pointer;
   transition: 0.25s;
 }
@@ -256,16 +183,43 @@ footer {
   background: #b3b3b3;
 }
 
-.modal-content {
-  max-height: 80vh;
-  /* que no se salga de la pantalla */
-  overflow-y: auto;
-  /* activa scroll si hace falta */
+/* LISTA DE CONFIRMADOS */
+.confirmed-section {
+  margin-top: 35px;
+  padding: 20px;
+  background: #fce4ec;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
 }
 
-.guest-list {
-  max-height: 65vh;
-  overflow-y: auto;
-  padding-right: 5px;
-  /* mejora el scroll */
+.confirmed-section h2 {
+  color: #d81b60;
+  margin-bottom: 10px;
 }
+
+#confirmedList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px;
+}
+
+#confirmedList li {
+  background: white;
+  padding: 10px 15px;
+  margin: 6px 0;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  font-weight: 600;
+}
+
+/* INPUT DE CONTRASEÑA */
+#adminPassword {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: 60%;
+    max-width: 200px;
+}
+
