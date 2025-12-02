@@ -43,7 +43,7 @@ const guests = [
   { name: "Seba Diaz", qty: 2 },
   { name: "Markuza", qty: 1 },
   { name: "El Tucu Gamarra", qty: 1 },
-  { name: "Fabri Cusumano", qty: 1 },
+  { name: "Fabri y Lauti Cusumano", qty: 1 },
 ];
 
 // ABRIR MODAL
